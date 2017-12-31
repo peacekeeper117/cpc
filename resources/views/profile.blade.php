@@ -59,7 +59,8 @@
                         <li class="divider"></li>
                         <li><a href="#"><span class="fa fa-warning pull-right"></span>Report this user for spam</a></li>
                         <li class="divider"></li>
-                        <li><a href="/editprof/{{ $user->id }}/edit">Edit Profile</a></li>
+                        @if((Auth::user()->id) == $user->id)<li><a href="/editprof/{{ $user->id }}/edit">Edit Profile</a></li>
+                        @endif
                       </ul>
                     </div>
                 </div>

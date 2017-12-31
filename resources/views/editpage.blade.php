@@ -1,13 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
+@if((Auth::user()->id) == $prof->id)
 <div class="row">
 	
 <div class="col-md-6 col-md-offset-3">
 
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h1>Upload a book</h1>
+		<h1>Edit your profile:</h1>
 		</div>
 <div class="panel-body">
 
@@ -48,4 +49,7 @@
 </div>
 
 </div>
+@else <h1>You cannot edit this profile, dude!</h1>
+@endif
+
 @endsection
