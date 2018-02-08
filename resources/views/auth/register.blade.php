@@ -23,6 +23,7 @@
                                 @endif
                             </div>
                         </div>
+<<<<<<< HEAD
                         <div class="form-group{{ $errors->has('username') ? ' has-error' : '' }}">
                             <label for="username" class="col-md-4 control-label">Userame</label>
 
@@ -36,6 +37,8 @@
                                 @endif
                             </div>
                         </div>
+=======
+>>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             <label for="name" class="col-md-4 control-label">Session</label>
 

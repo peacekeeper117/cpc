@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< HEAD
 use App\contestlist;
 use Carbon\Carbon;
 
@@ -11,12 +12,16 @@ use App\updateinfo;
 use Goutte\Client;
 
 
+=======
+use Illuminate\Http\Request;
+>>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
 
 class ContestForecastController extends Controller
 {
     //
     public function index()
     {
+<<<<<<< HEAD
         
 
         $mem_old=DB::table('updateinfos')->where('basis','contests')->value('members');
@@ -115,5 +120,8 @@ class ContestForecastController extends Controller
         $var=0;
         return view('frontEnd.contest.contestList',['obj'=>$obj,'var'=> $var]);
         
+=======
+        return view('frontEnd.contest.contestList');
+>>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
     }
 }

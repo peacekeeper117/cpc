@@ -45,7 +45,10 @@ return [
             'driver' => 'token',
             'provider' => 'users',
         ],
+<<<<<<< HEAD
         
+=======
+>>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
     ],
 
     /*

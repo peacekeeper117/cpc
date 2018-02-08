@@ -23,7 +23,10 @@ class HomeController extends Controller
      */
     public function index()
     {
+<<<<<<< HEAD
         return redirect('/forums');
+=======
+>>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
         return view('frontEnd.home.homeContent');
     }
 }

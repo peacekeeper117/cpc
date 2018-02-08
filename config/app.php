@@ -64,7 +64,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'timezone' => 'Asia/Dhaka',
+=======
+    'timezone' => 'UTC',
+>>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
 
     /*
     |--------------------------------------------------------------------------
@@ -162,8 +166,11 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+<<<<<<< HEAD
 	DevDojo\Chatter\ChatterServiceProvider::class,
 
+=======
+>>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
 
         /*
          * Package Service Providers...
@@ -178,8 +185,11 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+<<<<<<< HEAD
         App\Providers\GoogleDriveServiceProvider::class,
        
+=======
+>>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
 
     ],
 

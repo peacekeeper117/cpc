@@ -26,7 +26,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'cloud' => env('FILESYSTEM_CLOUD', 'google'),
+=======
+    'cloud' => env('FILESYSTEM_CLOUD', 's3'),
+>>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
 
     /*
     |--------------------------------------------------------------------------
@@ -62,6 +66,7 @@ return [
             'region' => env('AWS_REGION'),
             'bucket' => env('AWS_BUCKET'),
         ],
+<<<<<<< HEAD
         'google' => [
             'driver' => 'google',
             'clientId' => env('GOOGLE_DRIVE_CLIENT_ID'),
@@ -69,6 +74,9 @@ return [
             'refreshToken' => env('GOOGLE_DRIVE_REFRESH_TOKEN'),
             'folderId' => env('GOOGLE_DRIVE_FOLDER_ID'),
         ],
+=======
+
+>>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
     ],
 
 ];

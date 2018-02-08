@@ -4,7 +4,11 @@
 @endsection
 @section('home_desc')
 			<div class="panel-body">
+<<<<<<< HEAD
 				<i>*Ranking is updated Hourly</i>
+=======
+			
+>>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
                <div class="panel panel-default">
                         <div class="panel-heading">
                         <i> Session {{ Auth::user()->session }}</i>
@@ -29,7 +33,11 @@
                                         	<td> {{$var++}}</td>
                                             <td> {{$list->name}} ({{$list->cf_handle}})</td>
                                             <td>{{$list->cf_level}}</td>
+<<<<<<< HEAD
                                             <td>{{$list->cf_points }}</td>
+=======
+                                            <td>{{$list->cf_points *100 }}</td>
+>>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
                                             <td class="center"></td>
                                         </tr>
                                    	@endforeach

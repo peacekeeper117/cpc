@@ -12,8 +12,11 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<<<<<<< HEAD
     <link href="{{ asset('css/new1.css') }}" rel="stylesheet">
     @yield('css')
+=======
+>>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
 </head>
 <body>
     <div id="app">
@@ -49,8 +52,12 @@
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
                             <li class="dropdown">
+<<<<<<< HEAD
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="position:relative; padding-left:50px;">
                                     <img src="/uploads/avatars/{{Auth::user()->avatar}}" style="width:32px; height:32px; position:absolute; top:10px; left:10px; border-radius:50%">
+=======
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+>>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
@@ -79,6 +86,9 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+<<<<<<< HEAD
     @yield('js')
+=======
+>>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
 </body>
 </html>
