@@ -5,7 +5,6 @@
 
 
 @section('home_desc')
-<<<<<<< HEAD
 
 <div class="panel-body">
 	@foreach($obj as $list)
@@ -42,6 +41,4 @@
 </div>
 
 
-=======
->>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
 @endsection

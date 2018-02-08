@@ -2,11 +2,7 @@
 //Endpoints Of Hackerearth API
 use Faker\Provider\File;
 use Illuminate\Support\Facades\Response;
-<<<<<<< HEAD
 use App\simple_html_dom;
-=======
-
->>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
 
 function cf_info($handle){
     // Get cURL resource
@@ -26,7 +22,6 @@ function uva_info($handle){
     curl_setopt($curl, CURLOPT_URL,$url);
     return json_decode(curl_exec($curl), true);
 }
-<<<<<<< HEAD
 function cf_contest(){
     // Get cURL resource
     $url= "http://codeforces.com/api/contest.list?gym=false";
@@ -72,9 +67,4 @@ function devskill_contest(){
 
     return $arr;
 }
-=======
-
-
-
->>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
 ?>

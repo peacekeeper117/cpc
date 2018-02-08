@@ -6,7 +6,6 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
-<<<<<<< HEAD
 		"devdojo/chatter": "0.2.*",
         "ammadeuss/laravel-html-dom-parser": "^1.0",
         "fabpot/goutte": "^3.2",
@@ -20,15 +19,10 @@
 		"league/flysystem": "~1.0",
         "google/apiclient": "^2.0",
         "nao-pon/flysystem-cached-extra": "~1.0"
-=======
-        "laravel/framework": "5.4.*",
-        "laravel/tinker": "~1.0"
->>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
-<<<<<<< HEAD
         "phpunit/phpunit": "~5.7",
 		"symfony/phpunit-bridge": "^3.3 || ^4"
 
@@ -37,28 +31,16 @@
 		"files": [
             "app/codeforces.php",
 			"app/simple_html_dom.php"
-=======
-        "phpunit/phpunit": "~5.7"
-    },
-    "autoload": {
-		"files": [
-            "app/codeforces.php"
->>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
         ],
         "classmap": [
             "database"
         ],
         "psr-4": {
-<<<<<<< HEAD
             "App\\": "app/",
 			"Goutte\\": "Goutte",
 			"Hypweb\\Flysystem\\GoogleDrive\\": "src/"
         },
 		"exclude-from-classmap": ["Goutte/Tests"]
-=======
-            "App\\": "app/"
-        }
->>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
     },
     "autoload-dev": {
         "psr-4": {
@@ -84,11 +66,7 @@
     "config": {
         "preferred-install": "dist",
         "sort-packages": true,
-<<<<<<< HEAD
         "optimize-autoloader": true,
 		"bin-dir": "bin"
-=======
-        "optimize-autoloader": true
->>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
     }
 }

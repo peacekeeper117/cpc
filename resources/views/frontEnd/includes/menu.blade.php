@@ -35,7 +35,6 @@ font-size: 16px;"> Last access :  &nbsp;
 				
 					
                     <li>
-<<<<<<< HEAD
                         <a @yield('Active_home')  href="{{url('/home')}}"><i class="fas fa-home fa-3x"></i>&emsp;Home&emsp;</a>
                     </li>
 
@@ -57,40 +56,10 @@ font-size: 16px;"> Last access :  &nbsp;
                                         </li>
                                     </ul>
                                 
-=======
-                        <a @yield('Active_home')  href="{{url('/home')}}"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
-                    </li>
-
-                    <li>
-                        <a @yield('Active_contestlist') href="{{url('/upcoming-contest-list')}}"><i class="fa fa-qrcode fa-3x"></i> Contest List</a>
-                    </li>
-					<li>
-                        <a @yield('Active_ranking')><i class="fa fa-bar-chart-o fa-3x"></i> Ranking<span class="fa arrow"></span></a>
-                    	<ul class="nav nav-second-level">
-                            <li>
-                                <a >My Session Ranking<span class="fa arrow"></span></a>
-                               
-                                   <ul class="nav nav-third-level">
-                                        <li>
-                                            <a @yield('Active_ranking') href="{{url('/ranking-on-cf')}}"> Ranking on Codeforces</a>
-                                        </li>
-                                        <li>
-                                            <a @yield('Active_ranking') href="{{url('/ranking')}}" >Overall ranking</a>
-                                        </li>
-    
-                                    </ul>
-                            </li>
-                            <li>
-                                <a href="#">Current Session Ranking</a>
-                            </li>
-                            <li>
-                                <a href="#">Hall of Fame</a>
->>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
                             </li>
                         </ul>
                     
                     </li>	
-<<<<<<< HEAD
                     <li>
                         <a  href="#" @yield('Active_exstdnt')><i class="fas fa-graduation-cap fa-3x"></i> Ex-Student </a>
                     </li>				
@@ -127,46 +96,6 @@ font-size: 16px;"> Last access :  &nbsp;
                             </li>
                         </ul>
                       </li>  	
-=======
-                      <li  >
-                        <a  href="table.html"><i class="fa fa-table fa-3x"></i> Activity Schedule </a>
-                    </li>
-                    <li  >
-                        <a  href="form.html"><i class="fa fa-edit fa-3x"></i> Alumni </a>
-                    </li>				
-					
-					                   
-                    <li>
-                        <a href="#"><i class="glyphicon glyphicon-cog"></i> Settings <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="#"> Profile </a>
-                            </li>
-                            <li>
-                                <a href="#">Second Level Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Second Level Link<span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="#">Third Level Link</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Third Level Link</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Third Level Link</a>
-                                    </li>
-
-                                </ul>
-                               
-                            </li>
-                        </ul>
-                      </li>  
-                  <li  >
-                        <a @yield('Active_curated') href="{{url('/curated-contest')}}"><i class="fa fa-square-o fa-3x"></i> Curated Contest</a>
-                    </li>	
->>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
                 </ul>
                
             </div>

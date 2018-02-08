@@ -7,11 +7,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use App\codeforces;
 use App\standingInfo;
-<<<<<<< HEAD
 use App\updateinfo;
 use Carbon\Carbon;
-=======
->>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
 
 class StandingsController extends Controller
 {
@@ -55,7 +52,6 @@ class StandingsController extends Controller
     
     }
     public function rankingCfBased(){
-<<<<<<< HEAD
         
         $mem_old=DB::table('updateinfos')->where('basis','rank')->value('members');
         $time_old=DB::table('updateinfos')->where('basis','rank')->value('updated_at');
@@ -86,38 +82,10 @@ class StandingsController extends Controller
                 'cf_level'=> $cf_response['result'][0]['rank'],
                 'cf_points'=>$cf_response['result'][0]["rating"]
             ));
-=======
-        $res = DB::table('users')->get();
-        
-        foreach ($res as $result){
-            $cf_response=cf_info($result->cf_handle);
-            $uva_response=uva_info($result->uva_id);
-            //$obj=array("cf"=>$cf_response["result"][0]["rating"],"uva"=>$uva_response[0]["ac"]);
-            $rank= new standingInfo();
-            $rank->name = $result->name;
-            $rank->session= $result->session;
-            $rank->uva_id= $result->uva_id;
-            $rank->cf_handle= $result->cf_handle;
-            $rank->cf_points= floatval($cf_response["result"][0]["rating"])/100;
-            $rank->cf_level = $cf_response["result"][0]["rank"];
-            $rank->uva_points = floatval($uva_response[0]["ac"])/10;
-            $rank->total_points= $rank->cf_points+$rank->uva_points;
-            $temp= DB::table('standing_infos')->where('uva_id', '=', $result->uva_id )->get();
-            $comp=0;
-            foreach($temp as $bal){
-                $comp=$bal->cf_points;
-            }
-            if($rank->cf_points >= $comp ){
-                DB::table('standing_infos')->where('uva_id', '=', $result->uva_id )->delete();
-                
-                $rank->save();
-            }
->>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
         };
         
         $var=1;
         $obj=DB::table('standing_infos')->where('session','=', Auth::user()->session)->orderby('cf_points','DESC')->get();
-<<<<<<< HEAD
         
         DB::table('updateinfos')-> where('basis','=','rank')->update(array(
             'members'=> $mem,
@@ -125,8 +93,6 @@ class StandingsController extends Controller
         ));
         
         
-=======
->>>>>>> 9fd13aabbe941cd19f7ef5c0e6301c40fec4b7e6
         return view('frontEnd.standings.rankCFbased',['obj'=>$obj,'var'=> $var]);
         
         
