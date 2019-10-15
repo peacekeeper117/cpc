@@ -14,8 +14,10 @@
     <link href="{{asset('frontEnd/css/custom.css')}}" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+   <!--link href="{{asset('frontEnd/css/fontawsome/fa-svg-with-js.css')}}" rel="stylesheet" /-->
 	
 	@yield('datepicker')
+	@yield('extracss')
 	
 </head>
 <body>
@@ -394,6 +396,8 @@
      <!-- /. WRAPPER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
+    
+    
     <script src="{{asset('frontEnd/js/jquery-1.10.2.js')}}"></script>
       <!-- BOOTSTRAP SCRIPTS -->
     <script src="{{asset('frontEnd/js/bootstrap.min.js')}}"></script>
@@ -406,7 +410,8 @@
     <script src="{{asset('frontEnd/js/custom.js')}}"></script>
     <script src="{{asset('frontEnd/js/js/bootstrap-select.js')}}"></script>
     
-
-   
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.3/js/all.js"></script>
+   @yield('extrajs')
 </body>
 </html>

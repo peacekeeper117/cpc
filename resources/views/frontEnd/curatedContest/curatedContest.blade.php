@@ -25,18 +25,19 @@
         	<form  action="{{url('/set-curated-contest')}}" method="post">
         	{{csrf_field()}}
         			<div class= "form-group">
-        				<label> Type </label>
+        				<label> Hosted OJ </label>
 						<select class="selectpicker show-tick" data-size="10">
 								<optgroup label="Standard Contest">
     								<option>Codeforces</option>
     								<option>Codechef</option>
                                   	<option>Devskill</option>
                                   	<option>Hackerrank</option>
+                                  	<option>Toph.co</option>
                                   	<option>Hackerearth</option>
                                 </optgroup>
                               	<optgroup label="Curated Contest">
                               		<option>Vjudge</option>
-                              		<option>Hackerearth</option>
+                              		<option>Hackerrank</option>
                               	</optgroup>
                               	<optgroup label="International Contest">
                               		<option>ICPC</option>

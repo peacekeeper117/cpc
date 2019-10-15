@@ -4,7 +4,7 @@
 @endsection
 @section('home_desc')
 			<div class="panel-body">
-			
+				<i>*Ranking is updated Hourly</i>
                <div class="panel panel-default">
                         <div class="panel-heading">
                         <i> Session {{ Auth::user()->session }}</i>
@@ -29,7 +29,7 @@
                                         	<td> {{$var++}}</td>
                                             <td> {{$list->name}} ({{$list->cf_handle}})</td>
                                             <td>{{$list->cf_level}}</td>
-                                            <td>{{$list->cf_points *100 }}</td>
+                                            <td>{{$list->cf_points }}</td>
                                             <td class="center"></td>
                                         </tr>
                                    	@endforeach

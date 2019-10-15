@@ -35,75 +35,67 @@ font-size: 16px;"> Last access :  &nbsp;
 				
 					
                     <li>
-                        <a @yield('Active_home')  href="{{url('/home')}}"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
+                        <a @yield('Active_home')  href="{{url('/home')}}"><i class="fas fa-home fa-3x"></i>&emsp;Home&emsp;</a>
                     </li>
 
                     <li>
-                        <a @yield('Active_contestlist') href="{{url('/upcoming-contest-list')}}"><i class="fa fa-qrcode fa-3x"></i> Contest List</a>
+                        <a @yield('Active_contestlist') href="{{url('/upcoming-contest-list')}}"><i class="fas fa-flag-checkered fa-3x"></i>&emsp;Upcoming Contest &emsp;</a>
                     </li>
 					<li>
-                        <a @yield('Active_ranking')><i class="fa fa-bar-chart-o fa-3x"></i> Ranking<span class="fa arrow"></span></a>
+                        <a @yield('Active_ranking') href="#"><i class="fas fa-chart-bar fa-3x"></i>&emsp; Ranking &emsp;<span class="fas fa-caret-right fa-2x"></span></a>
                     	<ul class="nav nav-second-level">
                             <li>
-                                <a >My Session Ranking<span class="fa arrow"></span></a>
-                               
-                                   <ul class="nav nav-third-level">
+                                <a @yield('Active_msranking')  href="{{url('/ranking-on-cf')}}">My Session Ranking&emsp;</a>
+   
+                            </li>
+                            <li>
+                                <a href="#">Season&emsp;<span class="fas fa-caret-right fa-2x"></span></a>
+                                 <ul class="nav nav-third-level">
                                         <li>
-                                            <a @yield('Active_ranking') href="{{url('/ranking-on-cf')}}"> Ranking on Codeforces</a>
+                                            <a @yield('Active_cfranking') href="#"> Monthly Season</a>
                                         </li>
-                                        <li>
-                                            <a @yield('Active_ranking') href="{{url('/ranking')}}" >Overall ranking</a>
-                                        </li>
-    
                                     </ul>
-                            </li>
-                            <li>
-                                <a href="#">Current Session Ranking</a>
-                            </li>
-                            <li>
-                                <a href="#">Hall of Fame</a>
+                                
                             </li>
                         </ul>
                     
                     </li>	
-                      <li  >
-                        <a  href="table.html"><i class="fa fa-table fa-3x"></i> Activity Schedule </a>
-                    </li>
-                    <li  >
-                        <a  href="form.html"><i class="fa fa-edit fa-3x"></i> Alumni </a>
-                    </li>				
-					
-					                   
                     <li>
-                        <a href="#"><i class="glyphicon glyphicon-cog"></i> Settings <span class="fa arrow"></span></a>
+                        <a  href="#" @yield('Active_exstdnt')><i class="fas fa-graduation-cap fa-3x"></i> Ex-Student </a>
+                    </li>				
+					<li>
+					
+                        <a href="#"><i class="fas fa-cubes fa-3x"></i>&emsp;Contributions&emsp;<span class="fas fa-caret-right fa-2x"></span></a>
+                        	<ul class="nav nav-second-level">
+                        	<li>
+                                <a @yield('Active_curated') href="{{url('/curated-contest')}}" > Contest schedule </a>
+                            </li>
+                            <li>
+                                <a href="#">Problem Set<span class="fas fa-angle-right"></span></a>
+                                <ul class="nav nav-third-level">
+                                	<li>
+                                        <a @yield('Active_submit_problem') href="{{url('/submit-problem')}}" >Submit A Problem Set</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Provide Data Set</a>
+                                    </li>
+                                </ul>             
+                            </li>
+                        	</ul>
+                    </li>	
+					                   
+                    <li >
+                        <a href="#"><i class="fas fa-cogs fa-3x" @yield('Active_settings')></i>&emsp;Settings&emsp;<span class="fas fa-caret-right fa-2x"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="#"> Profile </a>
+                            
+                                <a href="/profile/{{ Auth::user()->username }}"@yield('Active_profile')> Profile </a>
                             </li>
                             <li>
-                                <a href="#">Second Level Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Second Level Link<span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="#">Third Level Link</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Third Level Link</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Third Level Link</a>
-                                    </li>
-
-                                </ul>
-                               
+                                <a href="/ex_register">Register as Ex Student</a>
                             </li>
                         </ul>
-                      </li>  
-                  <li  >
-                        <a @yield('Active_curated') href="{{url('/curated-contest')}}"><i class="fa fa-square-o fa-3x"></i> Curated Contest</a>
-                    </li>	
+                      </li>  	
                 </ul>
                
             </div>
