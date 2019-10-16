@@ -233,7 +233,7 @@ font-size: 16px;">   &nbsp;
             </div>
             
 </nav>  
-    <div class="col-md-12" style="float: right; padding-left: 8%;">
+    <div class="col-md-12 col-sm-8 col-xs-12" style="float: right; padding-left: 8%;">
         @yield('content')
     </div>
     

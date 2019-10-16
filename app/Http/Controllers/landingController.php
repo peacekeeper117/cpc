@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class LandingController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -23,8 +23,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return redirect('/forums');
-        return view('frontEnd.home.homeContent');
+        return redirect('/landing');
+        return view('frontEnd.home');
     }
 
+    
 }
