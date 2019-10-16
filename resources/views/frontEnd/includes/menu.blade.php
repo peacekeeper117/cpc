@@ -6,7 +6,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Computer Club</a> 
+                <a class="navbar-brand" href="/">Computer Club</a> 
             </div>
   <div style="color: white;
 padding: 15px 50px 5px 50px;
@@ -29,19 +29,19 @@ font-size: 16px;"> Last access :  &nbsp;
 <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
-				<li class="text-center">
+				<!-- <li class="text-center">
                     <img src="assets/img/find_user.png" class="user-image img-responsive"/>
-					</li>
+					</li> -->
 				
 					
                     <li>
                         <a @yield('Active_home')  href="{{url('/home')}}"><i class="fas fa-home fa-3x"></i>&emsp;Home&emsp;</a>
                     </li>
 
-                    <li>
+                    <!-- <li>
                         <a @yield('Active_contestlist') href="{{url('/upcoming-contest-list')}}"><i class="fas fa-flag-checkered fa-3x"></i>&emsp;Upcoming Contest &emsp;</a>
-                    </li>
-					<li>
+                    </li> -->
+					<!-- <li>
                         <a @yield('Active_ranking') href="#"><i class="fas fa-chart-bar fa-3x"></i>&emsp; Ranking &emsp;<span class="fas fa-caret-right fa-2x"></span></a>
                     	<ul class="nav nav-second-level">
                             <li>
@@ -59,10 +59,10 @@ font-size: 16px;"> Last access :  &nbsp;
                             </li>
                         </ul>
                     
-                    </li>	
-                    <li>
+                    </li>	 -->
+                    <!-- <li>
                         <a  href="#" @yield('Active_exstdnt')><i class="fas fa-graduation-cap fa-3x"></i> Ex-Student </a>
-                    </li>				
+                    </li>	 -->			
 					<li>
 					
                         <a href="#"><i class="fas fa-cubes fa-3x"></i>&emsp;Contributions&emsp;<span class="fas fa-caret-right fa-2x"></span></a>

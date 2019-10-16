@@ -36,6 +36,6 @@ class CuratedContest extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('curated_contests');
     }
 }

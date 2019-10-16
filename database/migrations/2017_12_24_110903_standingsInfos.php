@@ -36,6 +36,6 @@ class StandingsInfos extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('standing_infos');
     }
 }

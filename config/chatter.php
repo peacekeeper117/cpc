@@ -91,7 +91,7 @@ return [
     |
     */
 
-    'master_file_extend' => 'layouts.app',
+    'master_file_extend' => 'layouts.chatterbox',
 
     /*
     |--------------------------------------------------------------------------
@@ -204,7 +204,7 @@ return [
     |
     */
 
-    'editor' => 'tinymce',
+    'editor' => 'trumbowyg',
 
     /*
     |--------------------------------------------------------------------------
@@ -259,6 +259,17 @@ return [
 
     'paginate' => [
         'num_of_results' => 10,
+    ],
+
+    'order_by' => [
+    'posts' => [
+    'order' => 'created_at',
+    'by' => 'ASC'
+    ],
+    'discussions' => [
+    'order' => 'last_reply_at',
+    'by' => 'DESC'
+    ]
     ],
 
     /*
