@@ -13,11 +13,29 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/new1.css') }}" rel="stylesheet">
+    <style type="text/css">
+        body, html {
+                  height: 100%;
+                }
+
+        .bg {
+              /* The image used */
+              background-image: url("/frontEnd/img/bg1.png");
+
+              /* Full height */
+              height: 100%;
+
+              /* Center and scale the image nicely */
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+    </style>
     @yield('css')
 </head>
-<body>
+<body class="bg">
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
+        <nav class="navbar navbar-default navbar-inverse navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
 
@@ -73,8 +91,9 @@
                 </div>
             </div>
         </nav>
-
+        <div>
         @yield('content')
+        </div>
     </div>
 
     <!-- Scripts -->

@@ -18,6 +18,7 @@ Route::get('/', 'homeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'homeController@index')->name('home');
+Route::get('/landing', 'landingController@index')->name('landing');
 
 Route::get('/profile/{username}', 'ProfileController@profile');
 Route::post('/profile', 'ProfileController@update_avatar');

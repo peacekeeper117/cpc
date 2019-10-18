@@ -26,4 +26,5 @@ class HomeController extends Controller
         return redirect('/forums');
         return view('frontEnd.home.homeContent');
     }
+
 }
